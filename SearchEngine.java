@@ -50,7 +50,7 @@ class SearchHandler implements URLHandler {
             if (parameters[0].equals("s")) {
                 String newWord = parameters[1];
                 this.dictionary.add(newWord);
-                return addCatAscii("Added to dictionary");
+                return addCatAscii("Added " + newWord + " to dictionary");
             } else {
                 return addCatAscii("400 Invalid parameters");
             }
